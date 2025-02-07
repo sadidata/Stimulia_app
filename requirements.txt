@@ -1,5 +1,5 @@
 streamlit
-openia
+openai
 streamlit-option-menu
 plotly
 unidecode
