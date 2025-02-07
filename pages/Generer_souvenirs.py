@@ -63,6 +63,7 @@ def transform_transcript_to_prompt(transcript_text):
     prompt = (
         "Transforme le texte suivant en un prompt optimisé pour la génération d'image avec DALL-E. "
         "Supprime toutes les expressions subjectives (par exemple, 'je me rappelle') et reformule-le pour obtenir "
+        "Garde les descriptions des personnes (nationalité, couleur de peau, des yeux etc)"
         "une description en style animation qui reflète un souvenir. "
         f"Texte original : {transcript_text}"
     )
