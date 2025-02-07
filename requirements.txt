@@ -1,5 +1,5 @@
 streamlit
-pyngrok
+openia
 streamlit-option-menu
 plotly
 unidecode
