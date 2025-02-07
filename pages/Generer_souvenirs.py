@@ -6,7 +6,10 @@ from datetime import datetime
 from openai import OpenAI
 import io
 from pydub import AudioSegment
+import imageio_ffmpeg as ffmpeg
 
+# Définir le chemin du binaire ffmpeg fourni par imageio-ffmpeg
+AudioSegment.converter = ffmpeg.get_ffmpeg_exe()
 
 
 if "authenticated" not in st.session_state or not st.session_state.authenticated:
