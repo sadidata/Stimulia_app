@@ -8,7 +8,7 @@ if "authenticated" not in st.session_state or not st.session_state.authenticated
     st.stop()  # Arrête l'exécution du script ici
     
 # Répertoire contenant les images
-IMAGE_DIR = "/content/drive/MyDrive/Application/Streamlit_stimulia/image"
+IMAGE_DIR = "image/"
 
 # Filtrer les fichiers par extension (vous pouvez ajouter d'autres extensions si nécessaire)
 valid_extensions = [".png", ".jpg", ".jpeg", ".gif"]
