@@ -89,7 +89,7 @@ if audio_file is not None:
     audio_segment = AudioSegment.from_file(io.BytesIO(audio_bytes), format="wav")
     
     # Exporter en MP3
-    output_filename = f"/content/drive/MyDrive/Application/Streamlit_stimulia/audio/souvenir_{name_}.mp3"
+    output_filename = f"audio/souvenir_{name_}.mp3"
     audio_segment.export(output_filename, format="mp3")
     st.success(f"Audio converti et sauvegardé en MP3 sous {output_filename}")
 
@@ -111,7 +111,7 @@ if audio_file is not None:
             # Création du dossier "image" s'il n'existe pas
             os.makedirs("image", exist_ok=True)
             # Création d'un nom de fichier unique (en fonction de la date et de l'heure)
-            file_name = f"/content/drive/MyDrive/Application/Streamlit_stimulia/image/image_{name_}.png"
+            file_name = f"image/image_{name_}.png"
             with open(file_name, "wb") as f:
                 f.write(image_response.content)
             st.success(f"Image enregistrée sous : {file_name}")
