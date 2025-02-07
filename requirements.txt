@@ -1,0 +1,7 @@
+streamlit
+pyngrok
+streamlit-option-menu
+plotly
+unidecode
+elevenlabs
+pydub
