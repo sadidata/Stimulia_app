@@ -137,8 +137,8 @@ if not st.session_state.part1_generated:
             # Conversion audio du récit généré
             audio_file1 = text_to_speech(narrative, client_evenlab)
             if audio_file1:
-                elevenlabs.save(audio_file1, "/content/drive/MyDrive/Application/Streamlit_stimulia/audio/test1.mp3")
-                with open("/content/drive/MyDrive/Application/Streamlit_stimulia/audio/test1.mp3", "rb") as f:
+                elevenlabs.save(audio_file1, "audio/test1.mp3")
+                with open("audio/test1.mp3", "rb") as f:
                     audio_bytes = f.read()
                 st.audio(audio_bytes, format="audio/mp3")
                 st.session_state.audio1 = audio_bytes
@@ -180,8 +180,8 @@ if st.session_state.part1_done and not st.session_state.part3_generated:
         st.session_state.part3_done = True
         audio_file3 = text_to_speech(narrative, client_evenlab)
         if audio_file3:
-            elevenlabs.save(audio_file3, "/content/drive/MyDrive/Application/Streamlit_stimulia/audio/test3.mp3")
-            with open("/content/drive/MyDrive/Application/Streamlit_stimulia/audio/test3.mp3", "rb") as f:
+            elevenlabs.save(audio_file3, "audio/test3.mp3")
+            with open("audio/test3.mp3", "rb") as f:
                 audio_bytes = f.read()
             st.audio(audio_bytes, format="audio/mp3")
             st.session_state.audio3 = audio_bytes
